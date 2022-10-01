@@ -1,0 +1,10 @@
+{% extends 'animals/base.html' %}
+
+{% block content %}
+<h1>{{post.title}}</h1>
+{% if post.photo %}
+<p><img class="img-article-left" src="{{post.photo.url}}" alt=""></p>
+{% endif %}
+
+{{post.content|linebreaks}}
+{% endblock content %}
