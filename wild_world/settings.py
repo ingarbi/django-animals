@@ -150,7 +150,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://*.https://web-production-a5d8.up.railway.app/','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.web-production-a5d8.up.railway.app/','https://*.127.0.0.1']
+CSRF_COOKIE_SECURE=False
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
